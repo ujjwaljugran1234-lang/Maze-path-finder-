@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maze Path Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Maze Path Finder</h1>
+    <p class="intro">Click a cell to add/remove a wall. Green = start, red = finish.</p>
+    <div class="legend">
+      <span><i class="start"></i> Start</span>
+      <span><i class="end"></i> Finish</span>
+      <span><i class="wall"></i> Wall</span>
+      <span><i class="path"></i> Path</span>
+    </div>
+    <div id="maze" class="maze" aria-label="Maze grid"></div>
+    <div class="actions">
+      <button id="solveBtn">Find Path (C API)</button>
+      <button id="clearBtn" class="secondary">Clear Walls</button>
+    </div>
+    <p id="status" role="status">Click cells to set walls, then Find Path.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
